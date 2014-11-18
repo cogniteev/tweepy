@@ -172,7 +172,7 @@ class API(object):
             api=self,
             path='/statuses/show.json',
             payload_type='status',
-            allowed_param=['id']
+            allowed_param=['id', 'trim_user', 'include_my_retweet', 'include_entities']
         )
 
     def update_status(self, *args, **kwargs):
